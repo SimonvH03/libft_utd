@@ -6,7 +6,7 @@
 /*   By: simon <simon@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/03 16:53:50 by svan-hoo          #+#    #+#             */
-/*   Updated: 2024/03/24 00:24:13 by simon            ###   ########.fr       */
+/*   Updated: 2024/04/30 23:10:53 by simon            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -80,6 +80,7 @@ char		*ft_strchr(const char *str, int c);
 int			ft_strchr_null(const char *str, char c);
 char		*ft_strdup(const char *s);
 void		ft_striteri(char *s, void (*f)(unsigned int, char*));
+char		*ft_strjoin_d(const char *s1, const char *s2, const char delim);
 char		*ft_strjoin(const char *s1, const char *s2);
 char		*ft_substr(const char *s, unsigned int start, size_t len);
 char		*ft_strmapi(const char *s, char (*f)(unsigned int, char));
