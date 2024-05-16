@@ -6,7 +6,7 @@
 /*   By: svan-hoo <svan-hoo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/16 19:56:43 by svan-hoo          #+#    #+#             */
-/*   Updated: 2024/05/16 19:57:59 by svan-hoo         ###   ########.fr       */
+/*   Updated: 2024/05/16 20:04:15 by svan-hoo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 // free all pointers in array, then array itself. Array must be NULL-terminated.
 void
-	free_array(
+	ft_free_ptr_array(
 		void **array)
 {
 	int	i;

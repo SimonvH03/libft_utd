@@ -6,7 +6,7 @@
 /*   By: svan-hoo <svan-hoo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/03 16:53:50 by svan-hoo          #+#    #+#             */
-/*   Updated: 2024/05/16 19:58:26 by svan-hoo         ###   ########.fr       */
+/*   Updated: 2024/05/16 20:05:16 by svan-hoo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -86,7 +86,7 @@ char		*ft_substr(const char *s, unsigned int start, size_t len);
 char		*ft_strmapi(const char *s, char (*f)(unsigned int, char));
 
 void		*ft_free_null(char **pp);
-void		*ft_free_ptr_array(char **pp);
+void		ft_free_ptr_array(void **array);
 
 int			ft_strncmp(const char *a, const char *b, size_t n);
 char		*ft_strnstr(const char *haystack, const char *needle, size_t n);
