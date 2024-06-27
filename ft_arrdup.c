@@ -1,26 +1,34 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_free_ptr_array.c                                :+:      :+:    :+:   */
+/*   ft_arrdup.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: svan-hoo <svan-hoo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/05/16 19:56:43 by svan-hoo          #+#    #+#             */
-/*   Updated: 2024/06/27 21:13:44 by svan-hoo         ###   ########.fr       */
+/*   Created: 2024/06/27 20:50:39 by svan-hoo          #+#    #+#             */
+/*   Updated: 2024/06/27 21:13:32 by svan-hoo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-// free all pointers in array, then array itself. Array must be NULL-terminated.
-void
-	ft_free_ptr_array(
-		void **array)
+char	**ft_arrdup(char **arr)
 {
-	int	i;
+	char	**dup;
+	int		i;
 
 	i = 0;
-	while (array[i] != NULL)
-		free(array[i++]);
-	free(array);
+	while (arr[i])
+		++i;
+	dup = (char **)malloc((i + 1) * sizeof(char *));
+	if (dup == NULL)
+		return (NULL);
+	dup[i] = NULL;
+	while (i--)
+	{
+		dup[i] = ft_strdup(arr[i]);
+		if (!dup[i])
+			return (ft_free_ptr_array(dup), NULL);
+	}
+	return (dup);
 }
