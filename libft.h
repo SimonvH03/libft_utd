@@ -6,7 +6,7 @@
 /*   By: svan-hoo <svan-hoo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/03 16:53:50 by svan-hoo          #+#    #+#             */
-/*   Updated: 2024/06/27 22:01:26 by svan-hoo         ###   ########.fr       */
+/*   Updated: 2024/06/27 22:09:58 by svan-hoo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -101,6 +101,7 @@ int			ft_strncmp(const char *a, const char *b, size_t n);
 char		*ft_strnstr(const char *haystack, const char *needle, size_t n);
 char		*ft_strrchr(const char *str, int c);
 char		*ft_strtrim(const char *s1, const char *set);
+char		*ft_strnarr(char **haystack, char *needle, size_t n);
 
 void		ft_lstadd_back(t_list **lst, t_list *new);
 void		ft_lstadd_front(t_list **lst, t_list *new);
