@@ -1,29 +1,32 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strjoin_d.c                                     :+:      :+:    :+:   */
+/*   ft_array_append.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: svan-hoo <svan-hoo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/10/19 17:37:50 by svan-hoo          #+#    #+#             */
-/*   Updated: 2024/08/14 19:28:01 by svan-hoo         ###   ########.fr       */
+/*   Created: 2024/06/27 21:31:21 by svan-hoo          #+#    #+#             */
+/*   Updated: 2024/08/09 16:33:39 by svan-hoo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strjoin_d(const char *s1, const char *s2, const char delim)
+char	**ft_array_append(char **array, char *add)
 {
-	char			*ptr;
-	const size_t	s1len = ft_strlen_null(s1);
-	const size_t	s2len = ft_strlen_null(s2);
+	char	**new;
+	size_t	size;
 
-	ptr = (char *)malloc((s1len + s2len + 2) * sizeof(char));
-	if (ptr == NULL)
+	size = 0;
+	while (array && array[size])
+		++size;
+	new = (char **)malloc(sizeof(char *) * (size + 1 + 1));
+	if (new == NULL)
 		return (NULL);
-	ft_strlcpy(ptr, s1, s1len + 1);
-	ptr[s1len] = delim;
-	ptr[s1len + 1] = '\0';
-	ft_strlcat(ptr, s2, s1len + s2len + 2);
-	return (ptr);
+	new[size] = add;
+	new[size + 1] = NULL;
+	while (size--)
+		new[size] = array[size];
+	free(array);
+	return (new);
 }
