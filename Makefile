@@ -1,6 +1,7 @@
 NAME	=	libft.a
 
-CFLAGS	=	-Wall -Wextra -Werror
+CFLAGS	=	-Wall -Werror -Wextra -O3
+CFLAGS	+=	-g
 
 SRC		=	ft_abs.c \
 			ft_array_append.c \
@@ -71,19 +72,21 @@ SRC		=	ft_abs.c \
 			ft_swap_ints.c \
 			ft_tolower.c \
 			ft_toupper.c \
-			ft_writing.c \
-			ft_cpy.c \
 			get_next_line.c \
 
-OBJ		=	$(SRC:.c=.o)
+OBJDIR	=	./obj
+OBJ		=	$(SRC:%.c=$(OBJDIR)/%.o)
 
 all: $(NAME)
 
 $(NAME): $(OBJ)
 	ar rcs $(NAME) $(OBJ)
 
-%.o: %.c
-	cc $(CFLAGS) -c $< -o $@
+$(OBJDIR):
+	mkdir -p $(OBJDIR)
+
+$(OBJDIR)/%.o: %.c
+	$(CC) $(CFLAGS) -o $@ -c $<
 
 clean:
 	rm -f $(OBJ)

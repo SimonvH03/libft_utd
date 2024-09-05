@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   libft.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: svan-hoo <svan-hoo@student.42.fr>          +#+  +:+       +#+        */
+/*   By: simon <simon@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/03 16:53:50 by svan-hoo          #+#    #+#             */
-/*   Updated: 2024/08/08 20:42:00 by svan-hoo         ###   ########.fr       */
+/*   Updated: 2024/09/06 01:10:30 by simon            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -71,10 +71,10 @@ void		*ft_memmove(void *dest, const void *src, size_t n);
 void		ft_memclear(char *src, size_t n);
 void		*ft_memset(void *src, int c, size_t n);
 
-void		ft_putchar_fd(char c, int fd);
-void		ft_putendl_fd(char *str, int fd);
-void		ft_putnbr_fd(int n, int fd);
-void		ft_putstr_fd(char *str, int fd);
+int			ft_putchar_fd(char c, int fd);
+int			ft_putendl_fd(char *str, int fd);
+int			ft_putnbr_fd(int n, int fd);
+int			ft_putstr_fd(char *str, int fd);
 
 int			ft_putnbr(long n);
 int			ft_putchar(char c);
