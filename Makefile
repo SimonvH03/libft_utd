@@ -85,7 +85,7 @@ $(NAME): $(OBJ)
 $(OBJDIR):
 	mkdir -p $(OBJDIR)
 
-$(OBJDIR)/%.o: %.c
+$(OBJDIR)/%.o: %.c $(OBJDIR)
 	$(CC) $(CFLAGS) -o $@ -c $<
 
 clean:
