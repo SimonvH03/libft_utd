@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   get_next_line.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: svan-hoo <svan-hoo@student.42.fr>          +#+  +:+       +#+        */
+/*   By: svan-hoo <svan-hoo@student.codam.nl>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/24 18:11:14 by svan-hoo          #+#    #+#             */
-/*   Updated: 2024/03/23 20:54:44 by svan-hoo         ###   ########.fr       */
+/*   Updated: 2024/09/16 17:01:04 by svan-hoo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,7 +43,7 @@ static char	*ft_strjoin_gnl(char **nextline, const char *buffer)
 		i = n_len + b_nl;
 	temptr = (char *)malloc((i + 1) * sizeof(char));
 	if (temptr == NULL)
-		return (ft_free_null(nextline));
+		return (ft_free_null((void *)nextline));
 	temptr[i] = '\0';
 	while (i-- > n_len)
 		temptr[i] = buffer[i - n_len];
@@ -52,7 +52,7 @@ static char	*ft_strjoin_gnl(char **nextline, const char *buffer)
 	{
 		temptr[i] = (*nextline)[i];
 	}
-	ft_free_null(nextline);
+	ft_free_null((void *)nextline);
 	return (temptr);
 }
 
@@ -65,7 +65,7 @@ static char	*ft_read_gnl(char **nextline, char *buffer, int fd)
 	{
 		bytes_read = read(fd, buffer, GNL_BUFFER_SIZE);
 		if (bytes_read < 0)
-			return (ft_free_null(nextline));
+			return (ft_free_null((void *)nextline));
 		buffer[bytes_read] = '\0';
 		*nextline = ft_strjoin_gnl(nextline, buffer);
 		if (*nextline == NULL)
@@ -112,6 +112,6 @@ char	*get_next_line(int fd)
 	}
 	ft_remainder_gnl(buffer);
 	if (nextline[0] == 0)
-		return (ft_free_null(&nextline));
+		return (ft_free_null((void *)&nextline));
 	return (nextline);
 }

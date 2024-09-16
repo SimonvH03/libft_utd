@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   libft.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: simon <simon@student.42.fr>                +#+  +:+       +#+        */
+/*   By: svan-hoo <svan-hoo@student.codam.nl>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/03 16:53:50 by svan-hoo          #+#    #+#             */
-/*   Updated: 2024/09/06 01:10:30 by simon            ###   ########.fr       */
+/*   Updated: 2024/09/16 16:50:08 by svan-hoo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,7 @@
 # include <stdlib.h>
 # include <stddef.h>
 # include <stdarg.h>
+# include <stdbool.h>
 # include <unistd.h>
 # include <limits.h>
 # include <fcntl.h>
@@ -58,7 +59,6 @@ int			ft_isdigit(int c);
 int			ft_isprint(int c);
 int			ft_iswhitespace(char c);
 
-
 int			ft_tolower(int c);
 int			ft_toupper(int c);
 
@@ -97,8 +97,8 @@ char		*ft_strjoin(const char *s1, const char *s2);
 char		*ft_substr(const char *str, unsigned int start, size_t len);
 char		*ft_strmapi(const char *str, char (*f)(unsigned int, char));
 
-void		*ft_free_null(char **pp);
-void		ft_free_array(char **array);
+void		*ft_free_null(void **pp);
+void		ft_free_array(void **array);
 char		**ft_realloc_array(char **array, size_t size);
 
 int			ft_strncmp(const char *a, const char *b, size_t n);
@@ -119,6 +119,7 @@ int			ft_lstsize(t_list *lst);
 
 int			ft_abs(int value);
 short		ft_sign(int value);
+short		is_in_circle(float x_minus_a, float y_minus_b, float radius);
 
 int			ft_writing(const char *str, int n);
 

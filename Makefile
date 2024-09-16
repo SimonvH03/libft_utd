@@ -73,6 +73,7 @@ SRC		=	ft_abs.c \
 			ft_tolower.c \
 			ft_toupper.c \
 			get_next_line.c \
+			is_in_circle.c \
 
 OBJDIR	=	./obj
 OBJ		=	$(SRC:%.c=$(OBJDIR)/%.o)
