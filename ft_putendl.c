@@ -1,31 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlen.c                                        :+:      :+:    :+:   */
+/*   ft_putendl_fd.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: svan-hoo <svan-hoo@student.42.fr>          +#+  +:+       +#+        */
+/*   By: simon <simon@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/10/03 17:59:12 by svan-hoo          #+#    #+#             */
-/*   Updated: 2024/03/19 18:23:47 by svan-hoo         ###   ########.fr       */
+/*   Created: 2023/10/19 14:57:41 by simon             #+#    #+#             */
+/*   Updated: 2024/09/06 01:20:22 by simon            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
 /**
- * @brief Returns the length of a string.
+ * @brief Outputs the string 's' to the standard output followed by a newline.
  *
- * This function returns the length of the string @p c.
+ * @param s The string to be output.
  *
- * @param c The string to get the length of.
- * @return The length of the string.
+ * @return The number of characters written, including the newline character.
  */
-size_t	ft_strlen(const char *c)
+int	ft_putendl(char *s)
 {
-	size_t	i;
-
-	i = 0;
-	while (c[i])
-		i++;
-	return (i);
+	return (ft_putstr(s) + ft_putchar('\n'));
 }

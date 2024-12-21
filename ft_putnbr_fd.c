@@ -12,7 +12,16 @@
 
 #include "libft.h"
 
-int	ft_putnbr_fd(int n, int fd)
+/**
+ * @brief Writes an integer to a file descriptor.
+ *
+ * This function writes the integer @p n to the file descriptor @p fd.
+ *
+ * @param n The integer to write.
+ * @param fd The file descriptor to write to.
+ * @return The number of characters written.
+ */
+int	ft_putnbr_fd(long n, int fd)
 {
 	int		len;
 

@@ -12,6 +12,17 @@
 
 #include "libft.h"
 
+/**
+ * @brief Writes a byte to a memory area.
+ *
+ * This function writes the byte @p c to the first @p n bytes of the memory area
+ * pointed to by @p s.
+ *
+ * @param s The memory area to write to.
+ * @param c The byte to write.
+ * @param n The number of bytes to write.
+ * @return The original value of @p s.
+ */
 void	*ft_memset(void *s, int c, size_t n)
 {
 	size_t			i;

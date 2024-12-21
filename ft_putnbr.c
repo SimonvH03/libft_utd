@@ -12,11 +12,24 @@
 
 #include "libft.h"
 
+/**
+ * @brief Writes an integer to standard output.
+ *
+ * This function writes the integer @p n to standard output. The function accounts
+ * for the sign of the integer, and writes the integer to standard output.
+ *
+ * @param n The integer to write.
+ * @return The number of characters written.
+ */
 int	ft_putnbr(long n)
 {
 	int	len;
 
 	len = 0;
+	if (n == INT_MIN)
+	{
+		return (ft_putstr("-2147483648"));
+	}
 	if (n < 0)
 	{
 		len += ft_putchar('-');

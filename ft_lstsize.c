@@ -12,6 +12,14 @@
 
 #include "libft.h"
 
+/**
+ * @brief Counts the number of elements in a linked list.
+ *
+ * This function counts the number of elements in the linked list @p lst.
+ *
+ * @param lst The linked list to count the elements of.
+ * @return The number of elements in the linked list.
+ */
 int	ft_lstsize(t_list *lst)
 {
 	int	count;

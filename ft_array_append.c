@@ -12,6 +12,17 @@
 
 #include "libft.h"
 
+/**
+ * @brief Appends a string to an array of strings.
+ *
+ * This function takes an array of strings and a string to append to it. The
+ * new string is added to the end of the array, and the array is null-terminated.
+ *
+ * @param array The array of strings to append to.
+ * @param add The string to append to the array.
+ * @return A pointer to the newly allocated array of strings, or NULL if
+ *         memory allocation fails.
+ */
 char	**ft_array_append(char **array, char *add)
 {
 	char	**new;

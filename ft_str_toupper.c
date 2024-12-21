@@ -12,6 +12,14 @@
 
 #include "libft.h"
 
+/**
+ * @brief Converts a string to uppercase.
+ *
+ * This function converts the string @p src to uppercase.
+ *
+ * @param src The string to convert to uppercase.
+ * @return The number of characters converted.
+ */
 int	ft_str_toupper(char *src)
 {
 	const int	slen = ft_strlen(src);

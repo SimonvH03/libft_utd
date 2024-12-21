@@ -12,6 +12,16 @@
 
 #include "libft.h"
 
+/**
+ * @brief Returns the first occurrence of a character in a string.
+ *
+ * This function returns a pointer to the first occurrence of the character @p c
+ * in the string @p str. If the character is not found, the function returns NULL.
+ *
+ * @param str The string to search.
+ * @param c The character to search for.
+ * @return A pointer to the first occurrence of the character in the string.
+ */
 char	*ft_strchr(const char *str, int c)
 {
 	while (*str || *str == (char)c)

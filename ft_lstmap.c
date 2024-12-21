@@ -12,6 +12,18 @@
 
 #include "libft.h"
 
+/**
+ * @brief Iterates over a linked list and applies a function to each element.
+ *
+ * This function iterates over the linked list @p lst and applies the function
+ * @p f to each element's content. If the function @p f returns NULL, the
+ * function frees the memory of the linked list and returns NULL.
+ *
+ * @param lst The linked list to iterate over.
+ * @param f The function to apply to each element's content.
+ * @param del The function used to free the content of each element.
+ * @return The new linked list, or NULL if memory allocation fails.
+ */
 t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 {
 	t_list	*first;

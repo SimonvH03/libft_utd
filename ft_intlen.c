@@ -12,6 +12,16 @@
 
 #include "libft.h"
 
+/**
+ * @brief Returns the number of characters needed to represent an integer.
+ *
+ * This function returns the number of characters needed to represent the integer @p n.
+ * The function accounts for the sign of the integer, and returns the number of characters
+ * needed to represent the integer.
+ *
+ * @param n The integer to represent.
+ * @return The number of characters needed to represent the integer.
+ */
 int	ft_intlen(int n)
 {
 	int	len;

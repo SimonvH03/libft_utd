@@ -10,11 +10,17 @@
 /*                                                                            */
 /* ************************************************************************** */
 
+/**
+ * @brief Swaps two integers.
+ *
+ * This function swaps the values of the integers pointed to by @p a and @p b.
+ *
+ * @param a The first integer to swap.
+ * @param b The second integer to swap.
+ */
 void	ft_swap_ints(int *a, int *b)
 {
-	int	temp;
-
-	temp = *a;
-	*a = *b;
-	*b = temp;
+	*a = *a ^ *b;
+	*b = *a ^ *b;
+	*a = *a ^ *b;
 }

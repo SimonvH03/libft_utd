@@ -59,6 +59,16 @@ static int	ft_putchar_back(const int c)
 	return (1);
 }
 
+/**
+ * @brief Writes a string to a file descriptor.
+ *
+ * This function writes up to `n` characters from the string `str` to the
+ * standard output (file descriptor 1).
+ *
+ * @param str The string to be written.
+ * @param n The maximum number of characters to write.
+ * @return The number of characters written, or -1 if an error occurs.
+ */
 int	ft_writing(const char *str, int n)
 {
 	const int	strlen = ft_strlen(str);

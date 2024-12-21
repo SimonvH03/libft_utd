@@ -22,7 +22,7 @@
 # include <fcntl.h>
 
 # ifndef GNL_BUFFER_SIZE
-#  define GNL_BUFFER_SIZE 100
+#  define GNL_BUFFER_SIZE 42
 # endif
 
 typedef struct s_list
@@ -33,9 +33,9 @@ typedef struct s_list
 
 enum	e_return
 {
-	ERROR = -1,
-	SUCCESS,
-	FAILURE
+	RETURN_ERROR = -1,
+	RETURN_SUCCESS,
+	RETURN_FAILURE
 };
 
 size_t		ft_strlcat(char *dst, const char *src, size_t l);
@@ -68,27 +68,27 @@ void		*ft_memchr(const void *src, int c, size_t n);
 int			ft_memcmp(const void *s1, const void *s2, size_t n);
 void		*ft_memcpy(void *dest, const void *src, size_t n);
 void		*ft_memmove(void *dest, const void *src, size_t n);
-void		ft_memclear(char *src, size_t n);
 void		*ft_memset(void *src, int c, size_t n);
 
 int			ft_putchar_fd(char c, int fd);
 int			ft_putendl_fd(char *str, int fd);
-int			ft_putnbr_fd(int n, int fd);
+int			ft_putnbr_fd(long n, int fd);
 int			ft_putstr_fd(char *str, int fd);
 
-int			ft_putnbr(long n);
 int			ft_putchar(char c);
-int			ft_putpointer(unsigned long p);
+int			ft_putendl(char *str);
+int			ft_putnbr(long n);
 int			ft_putstr(char *str);
+int			ft_putpointer(unsigned long p);
 
 int			ft_intlen_base(int n, char *base);
-int			ft_putnbr_base(long n, char *base);
+int			ft_putnbr_base(unsigned long n, char *base);
 
 char		**ft_array_append(char **array, char *add);
 char		**ft_arrdup(char **arr);
 char		**ft_split(const char *str, char c);
 char		*ft_strchr(const char *str, int c);
-int			ft_strchr_null(const char *str, char c);
+int			ft_strchr_null(const char *str, int c);
 char		*ft_strdup(const char *str);
 char		*ft_strdup_d(const char *str, const char delim);
 void		ft_striteri(char *str, void (*f)(unsigned int, char*));

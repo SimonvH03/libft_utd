@@ -12,6 +12,15 @@
 
 #include "libft.h"
 
+/**
+ * @brief Concatenates two strings.
+ *
+ * This function appends the string @p src to the end of the string @p dest.
+ *
+ * @param dest The destination string.
+ * @param src The source string to append.
+ * @return The number of characters appended.
+ */
 int	ft_strcat(char *dest, const char *src)
 {
 	const int	dlen = ft_strlen(dest);

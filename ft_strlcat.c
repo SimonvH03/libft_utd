@@ -12,6 +12,18 @@
 
 #include "libft.h"
 
+/**
+ * @brief Appends a string to a buffer.
+ *
+ * This function appends the string @p src to the buffer @p dst, up to a maximum
+ * of @p size - 1 characters. The buffer is null-terminated.
+ *
+ * @param dst The buffer to append the string to.
+ * @param src The string to append.
+ * @param size The size of the buffer.
+ * @return The total length of the string that would have been created if there
+ * was enough space, excluding the null-terminator.
+ */
 size_t	ft_strlcat(char *dst, const char *src, size_t size)
 {
 	size_t	slen;

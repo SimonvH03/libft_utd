@@ -12,6 +12,14 @@
 
 #include "libft.h"
 
+/**
+ * @brief Writes a pointer to standard output.
+ *
+ * This function writes the pointer @p p to standard output in hexadecimal format.
+ *
+ * @param p The pointer to write.
+ * @return The number of characters written.
+ */
 int	ft_putpointer(unsigned long p)
 {
 	int	len;

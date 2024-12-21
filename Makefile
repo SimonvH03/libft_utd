@@ -31,7 +31,6 @@ SRC		=	ft_abs.c \
 			ft_lstnew.c \
 			ft_lstsize.c \
 			ft_memchr.c \
-			ft_memclear.c \
 			ft_memcmp.c \
 			ft_memcpy.c \
 			ft_memmove.c \
@@ -40,6 +39,7 @@ SRC		=	ft_abs.c \
 			ft_putchar_fd.c \
 			ft_putchar.c \
 			ft_putendl_fd.c \
+			ft_putendl.c \
 			ft_putnbr_fd.c \
 			ft_putnbr_base.c \
 			ft_putnbr.c \

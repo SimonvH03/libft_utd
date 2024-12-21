@@ -10,6 +10,14 @@
 /*                                                                            */
 /* ************************************************************************** */
 
+/**
+ * @brief Converts a lowercase letter to uppercase.
+ *
+ * This function converts the lowercase letter @p c to uppercase.
+ *
+ * @param c The letter to convert to uppercase.
+ * @return The uppercase representation of the letter.
+ */
 int	ft_toupper(int c)
 {
 	if (c >= 97 && c <= 122)

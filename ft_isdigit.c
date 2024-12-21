@@ -10,6 +10,14 @@
 /*                                                                            */
 /* ************************************************************************** */
 
+/**
+ * @brief Checks if a character is a digit.
+ *
+ * This function checks if the character @p c is a digit.
+ *
+ * @param c The character to check.
+ * @return A non-zero value if the character is a digit, or 0 otherwise.
+ */
 int	ft_isdigit(int c)
 {
 	if (c >= 48 && c <= 57)

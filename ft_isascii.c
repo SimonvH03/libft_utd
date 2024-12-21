@@ -10,6 +10,14 @@
 /*                                                                            */
 /* ************************************************************************** */
 
+/**
+ * @brief Checks if a character is a 7-bit US-ASCII character.
+ *
+ * This function checks if the character @p c is a 7-bit US-ASCII character.
+ *
+ * @param c The character to check.
+ * @return A non-zero value if the character is a 7-bit US-ASCII character, or 0 otherwise.
+ */
 int	ft_isascii(int c)
 {
 	if (c >= 0 && c <= 127)

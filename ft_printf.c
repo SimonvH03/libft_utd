@@ -41,7 +41,7 @@ static int	ft_spellbook(va_list args, const char *form)
 	if (*form == 'u')
 		return (ft_putnbr(va_arg(args, unsigned int)));
 	if (*form == 'x')
-		return (ft_putnbr_base(va_arg(args, int),
+		return (ft_putnbr_base(va_arg(args, unsigned int),
 				"0123456789abcdef"));
 	if (*form == 'X')
 		return (ft_putnbr_base(va_arg(args, unsigned int),
@@ -55,6 +55,34 @@ static int	ft_spellbook(va_list args, const char *form)
 	return (bytes_printed);
 }
 
+
+/**
+ * @brief Produces output according to a format.
+ *
+ * This function sends formatted output to stdout, using the format specified
+ * in the 'form' parameter.
+ * 
+ * Accepted formats:
+ * - %c: Character
+ * - %s: String
+ * - %p: Pointer
+ * - %d: Integer
+ * - %i: Integer
+ * - %u: Unsigned integer
+ * - %x: Hexadecimal integer
+ * - %X: Uppercase hexadecimal integer
+ * - %%: Percent sign
+ *
+ * @param form The format string that specifies how subsequent arguments are
+ * converted for output. It contains ordinary characters (which are copied
+ * unchanged to the output) and format specifiers (which define how to format
+ * the arguments).
+ * @param ... The variable arguments to be formatted and printed according to
+ * the format string.
+ *
+ * @return The total number of characters written, or a negative value if an
+ * output error occurs.
+ */
 int	ft_printf(const char *form, ...)
 {
 	va_list	args;

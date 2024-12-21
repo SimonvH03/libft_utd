@@ -12,6 +12,18 @@
 
 #include "libft.h"
 
+/**
+ * @brief Allocates memory for a substring of a string.
+ *
+ * This function allocates memory for a substring of the string @p s, starting at
+ * the index @p start and containing at most @p len characters. The substring is
+ * null-terminated.
+ *
+ * @param s The string to create a substring from.
+ * @param start The index of the first character of the substring.
+ * @param len The maximum number of characters in the substring.
+ * @return A pointer to the newly allocated substring, or NULL if memory allocation fails.
+ */
 char	*ft_substr(const char *s, unsigned int start, size_t len)
 {
 	size_t		i;

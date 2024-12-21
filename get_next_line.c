@@ -88,9 +88,15 @@ static void	ft_remainder_gnl(char *buffer)
 			i++;
 		}
 	}
-	ft_memclear(buffer + i, GNL_BUFFER_SIZE - i);
+	ft_bzero((void *)buffer + i, GNL_BUFFER_SIZE - i);
 }
 
+/**
+ * Reads a line from the given file descriptor.
+ *
+ * @param fd The file descriptor to read from.
+ * @return A pointer to the read line, or NULL if an error occurs or the end of the file is reached.
+ */
 char	*get_next_line(int fd)
 {
 	static char	buffer[GNL_BUFFER_SIZE + 1];
@@ -101,13 +107,13 @@ char	*get_next_line(int fd)
 	nextline = ft_strdup_gnl(buffer);
 	if (nextline == NULL)
 	{
-		ft_memclear(buffer, GNL_BUFFER_SIZE + 1);
+		ft_bzero((void *)buffer, GNL_BUFFER_SIZE + 1);
 		return (NULL);
 	}
 	nextline = ft_read_gnl(&nextline, buffer, fd);
 	if (nextline == NULL)
 	{
-		ft_memclear(buffer, GNL_BUFFER_SIZE + 1);
+		ft_bzero((void *)buffer, GNL_BUFFER_SIZE + 1);
 		return (NULL);
 	}
 	ft_remainder_gnl(buffer);

@@ -12,6 +12,16 @@
 
 #include "libft.h"
 
+/**
+ * @brief Joins two strings.
+ *
+ * This function joins the strings @p s1 and @p s2. The newly allocated string is
+ * null-terminated.
+ *
+ * @param s1 The first string to join.
+ * @param s2 The second string to join.
+ * @return A pointer to the newly allocated string, or NULL if memory allocation fails.
+ */
 char	*ft_strjoin(const char *s1, const char *s2)
 {
 	char			*ptr;

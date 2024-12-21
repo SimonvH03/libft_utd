@@ -12,6 +12,17 @@
 
 #include "libft.h"
 
+/**
+ * @brief Joins two strings with a delimiter character.
+ *
+ * This function joins the strings @p s1 and @p s2 with the delimiter character @p delim
+ * in between them. The newly allocated string is null-terminated.
+ *
+ * @param s1 The first string to join.
+ * @param s2 The second string to join.
+ * @param delim The delimiter character to insert between the strings.
+ * @return A pointer to the newly allocated string, or NULL if memory allocation fails.
+ */
 char	*ft_strjoin_d(const char *s1, const char *s2, const char delim)
 {
 	char			*ptr;

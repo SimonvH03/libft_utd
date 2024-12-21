@@ -12,8 +12,17 @@
 
 #include "libft.h"
 
+/**
+ * @brief Writes zeroes to a byte string.
+ *
+ * This function writes zeroes to the first @p n bytes of the memory area
+ * pointed to by @p s. If @p n is zero, the function does nothing.
+ *
+ * @param s The memory area to write zeroes to.
+ * @param n The number of bytes to write zeroes to.
+ */
 void	ft_bzero(void *s, size_t n)
 {
 	while (n--)
-		*(unsigned char *)s++ = 0;
+		((unsigned char *)s)[n] = 0;
 }

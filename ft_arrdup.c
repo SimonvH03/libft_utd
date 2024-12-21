@@ -12,6 +12,17 @@
 
 #include "libft.h"
 
+/**
+ * @brief Duplicates an array of strings.
+ *
+ * This function takes a null-terminated array of strings and creates a
+ * duplicate of it. Each string in the array is duplicated, and the new
+ * array is also null-terminated.
+ *
+ * @param arr The null-terminated array of strings to duplicate.
+ * @return A pointer to the newly allocated array of strings, or NULL if
+ *         memory allocation fails.
+ */
 char	**ft_arrdup(char **arr)
 {
 	char	**dup;

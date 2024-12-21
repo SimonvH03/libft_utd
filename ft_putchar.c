@@ -12,6 +12,14 @@
 
 #include "libft.h"
 
+/**
+ * @brief Writes a character to standard output.
+ *
+ * This function writes the character @p c to standard output.
+ *
+ * @param c The character to write.
+ * @return The number of bytes written, or -1 if an error occurs.
+ */
 int	ft_putchar(char c)
 {
 	return (write(1, &c, 1));

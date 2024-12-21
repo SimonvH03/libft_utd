@@ -12,6 +12,15 @@
 
 #include "libft.h"
 
+/**
+ * @brief Deletes and frees the memory of a single element of a linked list.
+ *
+ * This function deletes and frees the memory of the element @p lst, using the
+ * function @p del to free the content of the element.
+ *
+ * @param lst The element to delete and free.
+ * @param del The function used to free the content of the element.
+ */
 void	ft_lstdelone(t_list *lst, void (*del)(void *))
 {
 	if (lst == NULL || del == NULL)

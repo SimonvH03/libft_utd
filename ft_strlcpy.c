@@ -12,6 +12,18 @@
 
 #include "libft.h"
 
+/**
+ * @brief Copies a string to a buffer.
+ *
+ * This function copies @p size - 1 characters from the string @p src to the buffer
+ * @p dst. The buffer is null-terminated.
+ *
+ * @param dst The buffer to copy the string to.
+ * @param src The string to copy.
+ * @param size The size of the buffer.
+ * @return The total length of the string that would have been created if there
+ * was enough space, excluding the null-terminator.
+ */
 size_t	ft_strlcpy(char *dst, const char *src, size_t size)
 {
 	size_t	i;

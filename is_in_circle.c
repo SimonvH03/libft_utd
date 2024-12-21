@@ -12,11 +12,17 @@
 
 #include "libft.h"
 
-/// @brief 
-/// @param x_minus_a X-center minus x-coordinate of point to check
-/// @param y_minus_b Y-center minus y_coordinate of point to check
-/// @param radius radius of circle
-/// @return true(1) if point is inside the circle, false(0) if not
+/**
+ * @brief Checks if a point is inside a circle.
+ *
+ * This function checks if the point with coordinates @p x_minus_a and @p y_minus_b
+ * is inside the circle with radius @p radius and center at (a, b).
+ *
+ * @param x_minus_a The x-coordinate of the point minus the x-coordinate of the center.
+ * @param y_minus_b The y-coordinate of the point minus the y-coordinate of the center.
+ * @param radius The radius of the circle.
+ * @return true if the point is inside the circle, false otherwise.
+ */
 short
 	is_in_circle(
 		float x_minus_a,
