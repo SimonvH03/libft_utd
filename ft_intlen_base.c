@@ -13,16 +13,20 @@
 #include "libft.h"
 
 /**
- * @brief Returns the number of characters needed to represent an integer in a given base.
+ * @brief Returns the number of characters needed
+ * 	to represent an integer in a given base.
  *
- * This function returns the number of characters needed to represent the integer @p n
- * in the given base. The base is a string of characters that represent the digits of
- * the number system to use. The function accounts for the sign of the integer, and
- * returns the number of characters needed to represent the integer in the given base.
+ * This function returns the number of characters needed
+ * 	to represent the integer @p n in the given base.
+ * The base is a string of characters that represent the digits
+ * 	of the number system to use.
+ * The function accounts for the sign of the integer, and returns the number
+ * 	of characters needed to represent the integer in the given base.
  *
  * @param n The integer to represent.
  * @param base The base to represent the integer in.
- * @return The number of characters needed to represent the integer in the given base.
+ * @return The number of characters needed
+ * 	to represent the integer in the given base.
  */
 int	ft_intlen_base(int n, char *base)
 {

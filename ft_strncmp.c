@@ -15,15 +15,15 @@
 /**
  * @brief Compares two strings.
  *
- * This function compares the first @p n bytes of the strings @p a and @p b. The
- * comparison is case-sensitive.
+ * This function compares the first @p n bytes of the strings @p a and @p b.
+ * The comparison is case-sensitive.
  *
  * @param a The first string to compare.
  * @param b The second string to compare.
  * @param n The number of bytes to compare.
- * @return An integer less than, equal to, or greater than zero if the first @p n
- * bytes of @p a are found, respectively, to be less than, to match, or be greater
- * than the first @p n bytes of @p b.
+ * @return An integer less than, equal to, or greater than zero
+ * if the first @p n bytes of @p a are found to be
+ * less than, equal to, or greater than the first @p n bytes of @p b.
  */
 int	ft_strncmp(const char *a, const char *b, size_t n)
 {

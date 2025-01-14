@@ -15,8 +15,9 @@
 /**
  * @brief Appends a string to a buffer.
  *
- * This function appends the string @p src to the buffer @p dst, up to a maximum
- * of @p size - 1 characters. The buffer is null-terminated.
+ * This function appends the string @p src to the buffer @p dst,
+ * 	up to a maximum of @p size - 1 characters.
+ * The buffer is null-terminated.
  *
  * @param dst The buffer to append the string to.
  * @param src The string to append.

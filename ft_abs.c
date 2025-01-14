@@ -15,8 +15,8 @@
 /**
  * @brief Returns the absolute value of an integer.
  *
- * This function returns the absolute value of the given integer. If the
- * integer is negative, its negation is returned.
+ * This function returns the absolute value of the given integer.
+ * If the integer is negative, its negation is returned.
  *
  * @param value The integer to get the absolute value of.
  * @return The absolute value of the given integer.

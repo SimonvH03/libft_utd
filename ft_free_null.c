@@ -15,8 +15,8 @@
 /**
  * @brief Frees a pointer and sets it to NULL.
  *
- * This function frees the memory pointed to by @p pp, and then sets the pointer
- * to NULL.
+ * This function frees the memory pointed to by @p pp,
+ * 	and then sets the pointer to NULL.
  *
  * @param pp The pointer to free and set to NULL.
  * @return NULL.

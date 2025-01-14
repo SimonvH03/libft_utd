@@ -13,10 +13,12 @@
 /**
  * @brief Checks if a character is an alphabetic character.
  *
- * This function checks if the character @p c is an uppercase or lowercase letter.
+ * This function checks if the character @p c is an uppercase
+ * 	or lowercase letter.
  *
  * @param c The character to check.
- * @return A non-zero value if the character is an alphabetic character, or 0 otherwise.
+ * @return A non-zero value if the character is an alphabetic character,
+ * 	or 0 otherwise.
  */
 int	ft_isalpha(int c)
 {

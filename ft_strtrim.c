@@ -13,11 +13,13 @@
 #include "libft.h"
 
 /**
- * @brief Allocates memory for a copy of a string without leading or trailing characters.
+ * @brief Allocates memory for a copy of a string
+ * 	without leading or trailing characters.
  *
- * This function allocates memory for a copy of the string @p s1, without the leading
- * and trailing characters that are in the set @p set. The function returns the copy
- * of the string, or NULL if memory allocation fails.
+ * This function allocates memory for a copy of the string @p s1,
+ * 	without the leading and trailing characters that are in the set @p set.
+ * The function returns the copy of the string,
+ * 	or NULL if memory allocation fails.
  *
  * @param s1 The string to copy.
  * @param set The set of characters to remove from the string.

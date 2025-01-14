@@ -15,13 +15,14 @@
 /**
  * @brief Duplicates a string up to a delimiter character.
  *
- * This function duplicates the string @p str up to the first occurrence of the
- * delimiter character @p delim. The delimiter character is included in the
- * duplicated string.
+ * This function duplicates the string @p str up to the first occurrence
+ * 	of the delimiter character @p delim.
+ * The delimiter character is included in the duplicated string.
  *
  * @param str The string to duplicate.
  * @param delim The delimiter character.
- * @return A pointer to the newly allocated string, or NULL if memory allocation fails.
+ * @return A pointer to the newly allocated string,
+ * 	or NULL if memory allocation fails.
  */
 char	*ft_strdup_d(const char *str, const char delim)
 {

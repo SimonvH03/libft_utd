@@ -13,13 +13,15 @@
 #include "libft.h"
 
 /**
- * @brief Returns the length of a string, or 0 if the string is NULL.
+ * @brief Returns the length of a string,
+ * 	or 0 if the string is NULL.
  *
- * This function returns the length of the string @p str. If the string is NULL,
- * the function returns 0.
+ * This function returns the length of the string @p str.
+ * 	If the string is NULL, the function returns 0.
  *
  * @param str The string to get the length of.
- * @return The length of the string, or 0 if the string is NULL.
+ * @return The length of the string,
+ * 	or 0 if the string is NULL.
  */
 size_t	ft_strlen_null(const char *str)
 {

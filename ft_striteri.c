@@ -15,7 +15,8 @@
 /**
  * @brief Applies a function to each character of a string.
  *
- * This function applies the function @p func to each character of the string @p str,
+ * This function applies the function @p func
+ * 	to each character of the string @p str,
  * passing the index of the character as the first argument to the function.
  *
  * @param str The string to iterate over.

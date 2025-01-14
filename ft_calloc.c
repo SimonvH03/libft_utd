@@ -15,13 +15,14 @@
 /**
  * @brief Allocates memory for an array of elements.
  *
- * This function allocates memory for an array of @p nmemb elements of @p size
- * bytes each, and initializes the memory to zero. If either @p nmemb or @p size
- * is zero, the function returns a null pointer.
+ * This function allocates memory for an array of @p nmemb elements
+ * 	of @p size bytes each, and initializes the memory to zero.
+ * If either @p nmemb or @p size is zero, the function returns a null pointer.
  *
  * @param nmemb The number of elements to allocate memory for.
  * @param size The size of each element in bytes.
- * @return A pointer to the allocated memory, or NULL if memory allocation fails.
+ * @return A pointer to the allocated memory,
+ * 	or NULL if memory allocation fails.
  */
 void	*ft_calloc(size_t nmemb, size_t size)
 {

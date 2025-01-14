@@ -55,7 +55,6 @@ static int	ft_spellbook(va_list args, const char *form)
 	return (bytes_printed);
 }
 
-
 /**
  * @brief Produces output according to a format.
  *
@@ -80,7 +79,8 @@ static int	ft_spellbook(va_list args, const char *form)
  * @param ... The variable arguments to be formatted and printed according to
  * the format string.
  *
- * @return The total number of characters written, or a negative value if an
+ * @return The total number of characters written,
+ * 	or a negative value if an
  * output error occurs.
  */
 int	ft_printf(const char *form, ...)

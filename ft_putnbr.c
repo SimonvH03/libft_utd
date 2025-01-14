@@ -15,8 +15,9 @@
 /**
  * @brief Writes an integer to standard output.
  *
- * This function writes the integer @p n to standard output. The function accounts
- * for the sign of the integer, and writes the integer to standard output.
+ * This function writes the integer @p n to standard output.
+ * The function accounts for the sign of the integer,
+ * 	and writes the integer to standard output.
  *
  * @param n The integer to write.
  * @return The number of characters written.

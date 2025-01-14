@@ -1,7 +1,7 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_is_in_circle.c                                     :+:      :+:    :+:   */
+/*   ft_is_in_circle.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: svan-hoo <svan-hoo@student.codam.nl>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
@@ -15,11 +15,14 @@
 /**
  * @brief Checks if a point is inside a circle.
  *
- * This function checks if the point with coordinates @p x_minus_a and @p y_minus_b
- * is inside the circle with radius @p radius and center at (a, b).
+ * This function checks if the point with coordinates
+ * 	@p x_minus_a and @p y_minus_b is inside the circle
+ * 	with radius @p radius and center at (a, b).
  *
- * @param x_minus_a The x-coordinate of the point minus the x-coordinate of the center.
- * @param y_minus_b The y-coordinate of the point minus the y-coordinate of the center.
+ * @param x_minus_a The x-coordinate of the point
+ * 	minus the x-coordinate of the center.
+ * @param y_minus_b The y-coordinate of the point
+ * 	minus the y-coordinate of the center.
  * @param radius The radius of the circle.
  * @return true if the point is inside the circle, false otherwise.
  */

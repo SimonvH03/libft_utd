@@ -15,9 +15,10 @@
 /**
  * @brief Returns the sign of an integer.
  *
- * This function returns the sign of the given integer. If the integer is
- * negative, -1 is returned. If the integer is positive, 1 is returned. If
- * the integer is zero, 0 is returned.
+ * This function returns the sign of the given integer.
+ * If the integer is negative, -1 is returned.
+ * If the integer is positive, 1 is returned.
+ * If the integer is zero, 0 is returned.
  *
  * @param value The integer to get the sign of.
  * @return The sign of the given integer.

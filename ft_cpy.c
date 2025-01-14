@@ -15,8 +15,9 @@
 /**
  * @brief Copies a string to a buffer.
  *
- * This function copies @p n characters from the string @p add to the buffer
- * @p out. The buffer must be large enough to hold the copied string.
+ * This function copies @p n characters from the string @p add
+ * 	to the buffer @p out.
+ * The buffer must be large enough to hold the copied string.
  *
  * @param out The buffer to copy the string to.
  * @param add The string to copy.

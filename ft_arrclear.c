@@ -15,7 +15,8 @@
 /**
  * @brief Frees an array of pointers.
  *
- * This function frees an array of pointers, and then frees the array itself.
+ * This function frees an array of pointers,
+ * 	and then frees the array itself.
  *
  * @param array The array of pointers to free.
  */

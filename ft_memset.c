@@ -15,8 +15,8 @@
 /**
  * @brief Writes a byte to a memory area.
  *
- * This function writes the byte @p c to the first @p n bytes of the memory area
- * pointed to by @p s.
+ * This function writes the byte @p c to the first @p n bytes
+ * 	of the memory area pointed to by @p s.
  *
  * @param s The memory area to write to.
  * @param c The byte to write.

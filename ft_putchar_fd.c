@@ -19,7 +19,8 @@
  *
  * @param c The character to write.
  * @param fd The file descriptor to write to.
- * @return The number of bytes written, or -1 if an error occurs.
+ * @return The number of bytes written,
+ * 	or -1 if an error occurs.
  */
 int	ft_putchar_fd(char c, int fd)
 {

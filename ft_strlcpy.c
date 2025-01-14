@@ -15,8 +15,9 @@
 /**
  * @brief Copies a string to a buffer.
  *
- * This function copies @p size - 1 characters from the string @p src to the buffer
- * @p dst. The buffer is null-terminated.
+ * This function copies @p size - 1 characters from the string @p src
+ * 	to the buffer @p dst.
+ * The buffer is null-terminated.
  *
  * @param dst The buffer to copy the string to.
  * @param src The string to copy.

@@ -15,16 +15,17 @@
 /**
  * @brief Returns the index of the first occurrence of a character in a string.
  *
- * This function returns the index of the first occurrence of the character @p c
- * in the string @p str. If the character is not found, the function returns 0.
+ * This function returns the index of the first occurrence
+ * 	of the character @p c in the string @p str.
+ * If the character is not found, the function returns 0.
  *
  * @param str The string to search.
  * @param c The character to search for.
  * @return The index of the first occurrence of the character in the string.
  */
-int	ft_strchr_null(const char *str, int c)
+size_t	ft_strchr_null(const char *str, int c)
 {
-	int	i;
+	size_t	i;
 
 	i = 0;
 	if (str)

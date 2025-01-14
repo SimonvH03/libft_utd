@@ -55,15 +55,18 @@ static void	*ft_freeall(char **array, int row)
 }
 
 /**
- * @brief Splits a string into an array of substrings based on a delimiter character.
+ * @brief Splits a string into an array of substrings based on
+ * 	a delimiter character.
  *
- * This function takes a string `s` and a delimiter character `c`, and splits the string
- * into an array of substrings. Each substring is separated by the delimiter character.
+ * This function takes a string `s` and a delimiter character `c`,
+ * 	and splits the string into an array of substrings.
+ * Each substring is separated by the delimiter character.
  * The resulting array is null-terminated.
  *
  * @param s The input string to be split.
  * @param c The delimiter character used to split the string.
- * @return A null-terminated array of substrings. If memory allocation fails, returns NULL.
+ * @return A null-terminated array of substrings,
+ * 	or NULL if memory allocation fails.
  */
 char	**ft_split(const char *s, const char c)
 {

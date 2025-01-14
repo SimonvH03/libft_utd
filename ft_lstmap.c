@@ -15,27 +15,29 @@
 /**
  * @brief Iterates over a linked list and applies a function to each element.
  *
- * This function iterates over the linked list @p lst and applies the function
- * @p f to each element's content. If the function @p f returns NULL, the
- * function frees the memory of the linked list and returns NULL.
+ * This function iterates over the linked list @p lst
+ * 	and applies the function @p func to each element's content.
+ * If the function @p func returns NULL, the function frees the memory
+ * 	of the linked list and returns NULL.
  *
  * @param lst The linked list to iterate over.
- * @param f The function to apply to each element's content.
+ * @param func The function to apply to each element's content.
  * @param del The function used to free the content of each element.
- * @return The new linked list, or NULL if memory allocation fails.
+ * @return The new linked list,
+ * 	or NULL if memory allocation fails.
  */
-t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
+t_list	*ft_lstmap(t_list *lst, void *(*func)(void *), void (*del)(void *))
 {
 	t_list	*first;
 	t_list	*newnode;
 	void	*tmpcont;
 
-	if (lst == NULL || del == NULL || f == NULL)
+	if (lst == NULL || del == NULL || func == NULL)
 		return (NULL);
 	first = NULL;
 	while (lst)
 	{
-		tmpcont = f(lst->content);
+		tmpcont = func(lst->content);
 		newnode = ft_lstnew(tmpcont);
 		if (newnode == NULL)
 		{

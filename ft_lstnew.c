@@ -15,9 +15,9 @@
 /**
  * @brief Allocates memory for a new element of a linked list.
  *
- * This function allocates memory for a new element of a linked list, and sets
- * the content of the element to @p content. The next pointer of the element is
- * set to NULL.
+ * This function allocates memory for a new element of a linked list,
+ * 	and sets the content of the element to @p content.
+ * The next pointer of the element is set to NULL.
  *
  * @param content The content to set the element to.
  * @return The new element of the linked list.

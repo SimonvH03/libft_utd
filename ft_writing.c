@@ -67,7 +67,8 @@ static int	ft_putchar_back(const int c)
  *
  * @param str The string to be written.
  * @param n The maximum number of characters to write.
- * @return The number of characters written, or -1 if an error occurs.
+ * @return The number of characters written,
+ * 	or -1 if an error occurs.
  */
 int	ft_writing(const char *str, int n)
 {

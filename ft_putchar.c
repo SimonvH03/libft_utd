@@ -18,7 +18,8 @@
  * This function writes the character @p c to standard output.
  *
  * @param c The character to write.
- * @return The number of bytes written, or -1 if an error occurs.
+ * @return The number of bytes written,
+ * 	or -1 if an error occurs.
  */
 int	ft_putchar(char c)
 {

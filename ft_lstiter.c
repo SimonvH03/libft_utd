@@ -15,8 +15,8 @@
 /**
  * @brief Iterates over a linked list and applies a function to each element.
  *
- * This function iterates over the linked list @p lst and applies the function
- * @p f to each element's content.
+ * This function iterates over the linked list @p lst
+ * 	and applies the function @p f to each element's content.
  *
  * @param lst The linked list to iterate over.
  * @param f The function to apply to each element's content.

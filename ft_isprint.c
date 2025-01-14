@@ -16,7 +16,8 @@
  * This function checks if the character @p c is a printable character.
  *
  * @param c The character to check.
- * @return A non-zero value if the character is a printable character, or 0 otherwise.
+ * @return A non-zero value if the character is a printable character,
+ * 	or 0 otherwise.
  */
 int	ft_isprint(int c)
 {

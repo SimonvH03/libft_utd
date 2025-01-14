@@ -40,12 +40,13 @@ static void	ft_putnbr_ptr(char *ptr, int n)
 /**
  * @brief Converts an integer to a string.
  *
- * This function converts the integer @p n to a string representation. The string
- * is allocated with malloc(3), and must be freed with free(3) when it is no longer
- * needed.
+ * This function converts the integer @p n to a string representation.
+ * The string is allocated with malloc(3),
+ * 	and must be freed with free(3) when it is no longer needed.
  *
  * @param n The integer to convert to a string.
- * @return The string representation of the integer, or NULL if memory allocation fails.
+ * @return The string representation of the integer,
+ * 	or NULL if memory allocation fails.
  */
 char	*ft_itoa(int n)
 {
