@@ -15,25 +15,25 @@
 /**
  * @brief Applies a function to each character of a string.
  *
- * This function applies the function @p f to each character of the string @p s,
+ * This function applies the function @p func to each character of the string @p str,
  * passing the index of the character as the first argument to the function.
  *
- * @param s The string to iterate over.
- * @param f The function to apply to each character.
+ * @param str The string to iterate over.
+ * @param func The function to apply to each character.
  * @return A pointer to the newly allocated string, or NULL if memory allocation fails.
  */
-char	*ft_strmapi(const char *s, char (*f)(unsigned int, char))
+char	*ft_strmapi(const char *str, char (*func)(size_t, char))
 {
-	char			*ptr;
-	unsigned int	i;
+	char	*ptr;
+	size_t	i;
 
-	ptr = ft_strdup(s);
+	ptr = ft_strdup(str);
 	if (ptr == NULL)
 		return (NULL);
 	i = 0;
-	while (s[i])
+	while (str[i])
 	{
-		ptr[i] = f(i, s[i]);
+		ptr[i] = func(i, str[i]);
 		i++;
 	}
 	return (ptr);

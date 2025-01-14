@@ -21,9 +21,9 @@
  * @param str The string to get the length of.
  * @return The length of the string, or 0 if the string is NULL.
  */
-int	ft_strlen_null(const char *str)
+size_t	ft_strlen_null(const char *str)
 {
-	int	i;
+	size_t	i;
 
 	i = 0;
 	if (str)

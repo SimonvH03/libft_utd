@@ -1,7 +1,7 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   get_next_line.c                                    :+:      :+:    :+:   */
+/*   ft_get_next_line.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: svan-hoo <svan-hoo@student.codam.nl>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
@@ -14,7 +14,7 @@
 
 static char	*ft_strdup_gnl(const char *buffer)
 {
-	int		i;
+	size_t	i;
 	char	*temptr;
 
 	i = ft_strchr_null(buffer, '\n');
@@ -31,11 +31,11 @@ static char	*ft_strdup_gnl(const char *buffer)
 
 static char	*ft_strjoin_gnl(char **nextline, const char *buffer)
 {
-	char		*temptr;
-	const int	n_len = ft_strlen_null(*nextline);
-	const int	b_len = ft_strlen_null(buffer);
-	const int	b_nl = ft_strchr_null(buffer, '\n');
-	int			i;
+	char			*temptr;
+	const size_t	n_len = ft_strlen_null(*nextline);
+	const size_t	b_len = ft_strlen_null(buffer);
+	const size_t	b_nl = ft_strchr_null(buffer, '\n');
+	int				i;
 
 	if (b_nl == 0)
 		i = n_len + b_len;
@@ -97,7 +97,7 @@ static void	ft_remainder_gnl(char *buffer)
  * @param fd The file descriptor to read from.
  * @return A pointer to the read line, or NULL if an error occurs or the end of the file is reached.
  */
-char	*get_next_line(int fd)
+char	*ft_get_next_line(int fd)
 {
 	static char	buffer[GNL_BUFFER_SIZE + 1];
 	char		*nextline;

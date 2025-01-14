@@ -22,7 +22,7 @@
  * @param value The integer to get the sign of.
  * @return The sign of the given integer.
  */
-short
+int
 	ft_sign(
 		int value)
 {

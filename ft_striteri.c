@@ -15,20 +15,20 @@
 /**
  * @brief Applies a function to each character of a string.
  *
- * This function applies the function @p f to each character of the string @p s,
+ * This function applies the function @p func to each character of the string @p str,
  * passing the index of the character as the first argument to the function.
  *
- * @param s The string to iterate over.
- * @param f The function to apply to each character.
+ * @param str The string to iterate over.
+ * @param func The function to apply to each character.
  */
-void	ft_striteri(char *s, void (*f)(unsigned int, char*))
+void	ft_striteri(char *str, void (*func)(size_t, char*))
 {
-	unsigned int	i;
+	size_t	i;
 
 	i = 0;
-	while (s[i])
+	while (str[i])
 	{
-		f(i, (s + i));
+		func(i, (str + i));
 		i++;
 	}
 	return ;

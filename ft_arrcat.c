@@ -1,7 +1,7 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_array_append.c                                  :+:      :+:    :+:   */
+/*   ft_arrcat.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: svan-hoo <svan-hoo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
@@ -23,7 +23,7 @@
  * @return A pointer to the newly allocated array of strings, or NULL if
  *         memory allocation fails.
  */
-char	**ft_array_append(char **array, char *add)
+char	**ft_arrcat(char **array, char *add)
 {
 	char	**new;
 	size_t	size;

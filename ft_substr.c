@@ -24,7 +24,7 @@
  * @param len The maximum number of characters in the substring.
  * @return A pointer to the newly allocated substring, or NULL if memory allocation fails.
  */
-char	*ft_substr(const char *s, unsigned int start, size_t len)
+char	*ft_substr(const char *s, size_t start, size_t len)
 {
 	size_t		i;
 	size_t		slen;

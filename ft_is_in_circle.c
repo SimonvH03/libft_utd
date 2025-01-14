@@ -1,7 +1,7 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   is_in_circle.c                                     :+:      :+:    :+:   */
+/*   ft_is_in_circle.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: svan-hoo <svan-hoo@student.codam.nl>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
@@ -23,8 +23,8 @@
  * @param radius The radius of the circle.
  * @return true if the point is inside the circle, false otherwise.
  */
-short
-	is_in_circle(
+int
+	ft_is_in_circle(
 		float x_minus_a,
 		float y_minus_b,
 		float radius)
