@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
-/*                                                        :::      ::::::::   */
-/*   libft.h                                            :+:      :+:    :+:   */
-/*                                                    +:+ +:+         +:+     */
-/*   By: svan-hoo <svan-hoo@student.codam.nl>       +#+  +:+       +#+        */
-/*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/10/03 16:53:50 by svan-hoo          #+#    #+#             */
-/*   Updated: 2024/09/16 16:50:08 by svan-hoo         ###   ########.fr       */
+/*                                                        ::::::::            */
+/*   libft.h                                            :+:    :+:            */
+/*                                                     +:+                    */
+/*   By: svan-hoo <svan-hoo@student.codam.nl>         +#+                     */
+/*                                                   +#+                      */
+/*   Created: 2023/10/03 16:53:50 by svan-hoo      #+#    #+#                 */
+/*   Updated: 2025/02/24 02:00:57 by simon         ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -88,6 +88,7 @@ int		ft_putendl(char *str);
 int		ft_putendl_fd(char *str, int fd);
 int		ft_putnbr_base(unsigned long n, char *base);
 int		ft_putnbr_fd(long n, int fd);
+void	ft_putnbr_ptr(char *ptr, int n);
 int		ft_putnbr(long n);
 int		ft_putpointer(unsigned long p);
 int		ft_putstr(char *str);
