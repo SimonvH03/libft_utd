@@ -12,7 +12,6 @@
 
 #include "libft.h"
 
-
 /**
  * @brief Writes an integer to a string.
  *
