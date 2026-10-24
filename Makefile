@@ -13,6 +13,7 @@ SRC		=	ft_abs.c \
 			ft_calloc.c \
 			ft_cpy.c \
 			ft_free_null.c \
+			ft_free_ptr_array.c \
 			ft_get_next_line.c \
 			ft_intlen_base.c \
 			ft_intlen.c \
@@ -35,6 +36,7 @@ SRC		=	ft_abs.c \
 			ft_lstnew.c \
 			ft_lstsize.c \
 			ft_memchr.c \
+			ft_memclear.c \
 			ft_memcmp.c \
 			ft_memcpy.c \
 			ft_memmove.c \
@@ -54,6 +56,7 @@ SRC		=	ft_abs.c \
 			ft_realloc_array.c \
 			ft_sign.c \
 			ft_split.c \
+			ft_str_toupper.c \
 			ft_strcat.c \
 			ft_strchr.c \
 			ft_strchr_null.c \

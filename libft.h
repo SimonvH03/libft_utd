@@ -6,7 +6,7 @@
 /*   By: svan-hoo <svan-hoo@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2023/10/03 16:53:50 by svan-hoo      #+#    #+#                 */
-/*   Updated: 2025/04/05 15:24:21 by simon         ########   odam.nl         */
+/*   Updated: 2026/10/24 14:11:19 by svan-hoo      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -107,6 +107,7 @@ char	*ft_strdup_d(const char *str, const char delim);
 void	ft_striteri(char *str, void (*func)(size_t, char*));
 char	*ft_strjoin(const char *s1, const char *s2);
 char	*ft_strjoin_d(const char *s1, const char *s2, const char delim);
+int			ft_str_toupper(char *src);
 size_t	ft_strlcat(char *dst, const char *src, size_t l);
 size_t	ft_strlcpy(char *dst, const char *src, size_t l);
 size_t	ft_strlen(const char *c);
